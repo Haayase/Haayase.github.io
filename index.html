@@ -6,89 +6,83 @@
     <title>ToTsC Official Roster</title>
     <style>
         body {
-            background-image: url('https://images.pexels.com/photos/998641/pexels-photo-998641.jpeg');
-            background-repeat: no-repeat;
-            background-size: cover;
-            color: #fff;
+            background-image: url('https://images.pexels.com/photos/998641/pexels-photo-998641.jpeg'); /* Background texture image */
+            background-repeat: no-repeat; /* Prevent repeating the texture */
+            background-size: cover; /* Cover the entire viewport */
+            color: #fff; /* White text color for sophistication */
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
         }
-
         .pattern-overlay {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: url('https://images.pexels.com/photos/2341290/pexels-photo-2341290.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-            opacity: 0.08;
-            pointer-events: none;
+            background-image: url('https://images.pexels.com/photos/2341290/pexels-photo-2341290.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); /* Add the path to your pattern image */
+            opacity: 0.1; /* Adjust the opacity to make it subtle */
+            pointer-events: none; /* Allow clicks to pass through the pattern layer */
         }
-
         .header {
             text-align: center;
             padding: 40px 0;
-            background-color: rgba(0, 0, 0, 10.0); /* Slightly darker black header background */
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black header background for uniqueness */
         }
-
         h1 {
             font-size: 48px;
-            color: #ff6f61;
+            color: #ff6f61; /* Salmon text color */
             margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for depth */
         }
-
         .roster-container {
-            text-align: center;
+            text-align: center; /* Center-align text */
             padding: 40px 0;
         }
-
         ul {
             list-style: none;
             padding: 0;
         }
-
         li {
             margin: 15px 0;
             font-size: 28px;
-            color: #fff;
+            color: #ff6f61; /* Salmon text color */
+            background-color: rgba(139, 0, 0, 0.5); /* 50% transparent dark red background for uniqueness */
             padding: 15px 30px;
             border-radius: 10px;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-            /* Add a brighter texture as a mask image */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Lighter text shadow for depth */
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
-            background-image: url('https://images.unsplash.com/photo-1601326167532-d457cd8186cc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1587&q=80&brightness=2'); /* Your texture image URL with increased brightness */
-            text-stroke: 15px white; /* White outline */
+            background-image: url('https://www.transparenttextures.com/patterns/asfalt-dark.png'); /* Your texture image URL */
+            filter: brightness(0.7); /* Adjust the brightness here (0.7 means 70% brightness) */
         }
-
         .leader {
             font-weight: bold;
+            color: #333; /* Dark text color for contrast */
         }
-
         .future {
+            color: #666; /* Gray text color for future slots */
             font-style: italic;
         }
     </style>
 </head>
 <body>
-    <div class="pattern-overlay"></div>
+    <div class="pattern-overlay"></div> <!-- Add the pattern overlay div -->
     <div class="header">
         <h1>ToTsC Roster</h1>
     </div>
     <div class="roster-container">
         <ul>
             <li class="leader">ToTsC (LEADER) HAYAS</li>
-            <li>ToTsC Cadcap</li>
-            <li>ToTsC Itosile</li>
-            <li>ToTsC Jomba</li>
-            <li>ToTsC Karma</li>
-            <li>ToTsC RbM</li>
-            <li>ToTsC RuleOfSteel</li>
-            <li>ToTsC S909</li>
-            <li>ToTsC TYL3R</li>
+            <li style="background-image: url('https://www.transparenttextures.com/patterns/brick-wall.png'); filter: brightness(0.7);">ToTsC Cadcap</li>
+            <li style="background-image: url('https://www.transparenttextures.com/patterns/basketball.png'); filter: brightness(0.7);">ToTsC Itosile</li>
+            <li style="background-image: url('https://www.transparenttextures.com/patterns/az-subtle.png'); filter: brightness(0.7);">ToTsC Jomba</li>
+            <li style="background-image: url('https://www.transparenttextures.com/patterns/concrete-wall-2.png'); filter: brightness(0.7);">ToTsC Karma</li>
+            <li style="background-image: url('https://www.transparenttextures.com/patterns/wild-oliva.png'); filter: brightness(0.7);">ToTsC RbM</li>
+            <li style="background-image: url('https://www.transparenttextures.com/patterns/carbon-fibre.png'); filter: brightness(0.7);">ToTsC RuleOfSteel</li>
+            <li style="background-image: url('https://www.transparenttextures.com/patterns/black-linen.png'); filter: brightness(0.7);">ToTsC S909</li>
+            <li style="background-image: url('https://www.transparenttextures.com/patterns/dark-dotted.png'); filter: brightness(0.7);">ToTsC TYL3R</li>
             <li class="future">ToTsC (Future slots open)</li>
         </ul>
     </div>
