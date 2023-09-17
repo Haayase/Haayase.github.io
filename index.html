@@ -6,66 +6,88 @@
     <title>ToTsC Official Roster</title>
     <style>
         body {
-            background-image: url('https://images.pexels.com/photos/998641/pexels-photo-998641.jpeg'); /* Background texture image */
-            background-repeat: repeat; /* Repeat the texture */
-            color: #fff; /* White text color */
+            background-image: url('https://images.pexels.com/photos/998641/pexels-photo-998641.jpeg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: #fff;
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
         }
+
+        .pattern-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://images.pexels.com/photos/2341290/pexels-photo-2341290.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+            opacity: 0.08;
+            pointer-events: none;
+        }
+
         .header {
             text-align: center;
             padding: 40px 0;
-            background-color: rgba(76, 76, 76, 0.7); /* Semi-transparent gray header background */
+            background-color: rgba(0, 0, 0, 10.0); /* Slightly darker black header background */
         }
+
         h1 {
             font-size: 48px;
-            color: #ff6f61; /* Salmon text color */
+            color: #ff6f61;
             margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for depth */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
+
         .roster-container {
-            text-align: center; /* Center-align text */
+            text-align: center;
             padding: 40px 0;
         }
+
         ul {
             list-style: none;
             padding: 0;
         }
+
         li {
             margin: 15px 0;
             font-size: 28px;
-            color: #96ceb4; /* Light teal text color */
-            background-color: rgba(42, 54, 59, 0.7); /* Semi-transparent dark teal background */
-            padding: 10px 20px;
+            color: #fff;
+            padding: 15px 30px;
             border-radius: 10px;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Text shadow for depth */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+            /* Add a brighter texture as a mask image */
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            background-image: url('https://images.unsplash.com/photo-1601326167532-d457cd8186cc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1587&q=80&brightness=2'); /* Your texture image URL with increased brightness */
+            text-stroke: 15px white; /* White outline */
         }
+
         .leader {
             font-weight: bold;
-            color: #ff6f61; /* Salmon text color */
         }
+
         .future {
-            color: #999; /* Gray text color for future slots */
             font-style: italic;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Text shadow for depth */
         }
     </style>
 </head>
 <body>
+    <div class="pattern-overlay"></div>
     <div class="header">
         <h1>ToTsC Roster</h1>
     </div>
     <div class="roster-container">
         <ul>
-            <li>ToTsC (LEADER) HAYAS</li>
+            <li class="leader">ToTsC (LEADER) HAYAS</li>
             <li>ToTsC Cadcap</li>
             <li>ToTsC Itosile</li>
             <li>ToTsC Jomba</li>
             <li>ToTsC Karma</li>
             <li>ToTsC RbM</li>
             <li>ToTsC RuleOfSteel</li>
-            <li>ToTsC Izanagi</li>
+            <li>ToTsC S909</li>
             <li>ToTsC TYL3R</li>
             <li class="future">ToTsC (Future slots open)</li>
         </ul>
